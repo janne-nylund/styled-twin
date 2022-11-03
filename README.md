@@ -9,7 +9,7 @@
  ┣ 📜index.css<br/>
  ┗ 📜index.js<br/><br/>
 
-```
+```javascript
 const StyledLabel = styled.label`
   color: rgb(14, 182, 90);
   font-size: 0.8rem;
@@ -32,40 +32,38 @@ const StyledInput = styled.input`
   display: block;
   box-shadow: 0 1px 24px rgba(0, 0, 0, 0.1);
 
-&::placeholder {
-  color: hsl(0, 0%, 75%);
-  transition: all 0.2s;
-}
+  &::placeholder {
+    color: hsl(0, 0%, 75%);
+    transition: all 0.2s;
+  }
 
-&:focus {
-  outline: 1px solid rgba(0, 153, 70, 0.3);
-  outline-offset: 2px;
-  box-shadow: 0 1px 16px rgba(0, 153, 70, 0.1);
-}
+  &:focus {
+    outline: 1px solid rgba(0, 153, 70, 0.3);
+    outline-offset: 2px;
+    box-shadow: 0 1px 16px rgba(0, 153, 70, 0.1);
+  }
 
-&:placeholder-shown + ${StyledLabel} {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translateY(-4rem);
-  transform: translateY(-4rem);
-}
+  &:placeholder-shown + ${StyledLabel} {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
 `;
 
 export const MyInput = ({ type, label }) => {
-return (
-  <>
-    <StyledInput
-      id="inputId"
-      placeholder=" "
-      type={type}
-      autoComplete="off"
-      spellCheck="false"
-      className="peer"
-    />
-    <StyledLabel htmlFor="inputId">
-      {label}
-    </StyledLabel>
-  </>
-);
+  return (
+    <>
+      <StyledInput
+        id="inputId"
+        placeholder=" "
+        type={type}
+        autoComplete="off"
+        spellCheck="false"
+        className="peer"
+      />
+      <StyledLabel htmlFor="inputId">{label}</StyledLabel>
+    </>
+  );
 };
 ```
