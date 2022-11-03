@@ -1,12 +1,12 @@
 #Styled Components with Tailwind using Twin.Macro
 
 ###Structure tree
-src
-┣ components
-┃ ┣ InputWrapper.jsx
-┃ ┗ MyInput.jsx
-┣ App.js
-┣ index.css
+src<br/>
+┣ components<br/>
+┃ ┣ InputWrapper.jsx<br/>
+┃ ┗ MyInput.jsx<br/>
+┣ App.js<br/>
+┣ index.css<br/>
 ┗ index.js
 
 ```
