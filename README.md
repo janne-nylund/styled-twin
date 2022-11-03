@@ -2,12 +2,12 @@
 
 <h3>Structure tree</h3>
 📦src<br/>
- ┣ 📂components<br/>
- ┃ ┣ 📜InputWrapper.jsx<br/>
- ┃ ┗ 📜MyInput.jsx<br/>
- ┣ 📜App.js<br/>
- ┣ 📜index.css<br/>
- ┗ 📜index.js<br/><br/>
+ ┣ 📁components<br/>
+ ┃ ┣ 📄InputWrapper.jsx<br/>
+ ┃ ┗ 📄MyInput.jsx<br/>
+ ┣ 📄App.js<br/>
+ ┣ 📄index.css<br/>
+ ┗ 📄index.js<br/><br/>
 
 ```javascript
 // "plain" Styled Components
