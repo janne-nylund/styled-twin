@@ -1,6 +1,6 @@
-#Styled Components with Tailwind using Twin.Macro
+<h1>Styled Components with Tailwind using Twin.Macro</h1>
 
-###Structure tree
+<h3>Structure tree</h3>
 src<br/>
 ┣ components<br/>
 ┃ ┣ InputWrapper.jsx<br/>
