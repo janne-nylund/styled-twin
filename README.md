@@ -1,13 +1,13 @@
 <h1>Styled Components with Tailwind using Twin.Macro</h1>
 
 <h3>Structure tree</h3>
-src<br/>
-┣ components<br/>
-┃ ┣ InputWrapper.jsx<br/>
-┃ ┗ MyInput.jsx<br/>
-┣ App.js<br/>
-┣ index.css<br/>
-┗ index.js
+📦src<br/>
+ ┣ 📂components<br/>
+ ┃ ┣ 📜InputWrapper.jsx<br/>
+ ┃ ┗ 📜MyInput.jsx<br/>
+ ┣ 📜App.js<br/>
+ ┣ 📜index.css<br/>
+ ┗ 📜index.js<br/>
 
 ```
 const StyledLabel = styled.label`
