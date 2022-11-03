@@ -1,3 +1,4 @@
+import { useId } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 
@@ -18,7 +19,7 @@ const StyledLabel = styled.label(() => [
     peer-placeholder-shown:top-3 
     peer-placeholder-shown:text-gray-400 
     peer-focus:text-xs 
-    peer-focus:-top-5 
+    peer-focus:-top-6 
     peer-focus:left-4
     peer-focus:uppercase  
     peer-focus:text-green-600 
@@ -48,17 +49,19 @@ const StyledInput = styled.input(() => [
 ]);
 
 export const MyInput = ({ type, label }) => {
+  // useId is a hook for generating unique IDs that are stable across the server and client, while avoiding hydration mismatches.
+  const id = useId();
   return (
     <>
       <StyledInput
-        id="inputId"
+        id={id}
         placeholder=" "
         type={type}
         autoComplete="off"
         spellCheck="false"
         className="peer"
       />
-      <StyledLabel htmlFor="inputId">{label}</StyledLabel>
+      <StyledLabel htmlFor={id}>{label}</StyledLabel>
     </>
   );
 };
