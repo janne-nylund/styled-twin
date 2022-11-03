@@ -7,7 +7,7 @@
  ┃ ┗ 📜MyInput.jsx<br/>
  ┣ 📜App.js<br/>
  ┣ 📜index.css<br/>
- ┗ 📜index.js<br/>
+ ┗ 📜index.js<br/><br/>
 
 ```
 const StyledLabel = styled.label`
